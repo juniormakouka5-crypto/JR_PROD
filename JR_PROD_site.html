@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JR_PROD — production musicale, instrumentales et univers R&B / Gospel.">
+  <title>JR_PROD — Music Production</title>
+  <style>
+    :root{
+      --bg:#09090d; --card:#12121a; --text:#f6f3ee; --muted:#a7a3ad;
+      --accent:#d7a84f; --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+      background:radial-gradient(circle at 80% 0%,#25201a 0,transparent 35%),var(--bg);
+      color:var(--text);line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:fixed;top:0;width:100%;z-index:20;background:rgba(9,9,13,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:900;letter-spacing:2px;font-size:1.15rem}
+    .logo span{color:var(--accent)}
+    .links{display:flex;gap:28px;font-size:.92rem;color:#ddd}
+    .links a:hover{color:var(--accent)}
+    .menu{display:none;background:none;border:0;color:white;font-size:1.5rem}
+    .hero{min-height:100vh;display:grid;place-items:center;padding-top:72px;position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.22}
+    .hero:before{width:380px;height:380px;background:var(--accent);right:-120px;top:120px}
+    .hero:after{width:260px;height:260px;background:#5e3b86;left:-100px;bottom:80px}
+    .hero-content{position:relative;z-index:2;max-width:780px;text-align:center}
+    .tag{display:inline-block;border:1px solid var(--line);padding:7px 14px;border-radius:99px;color:#ddd;font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:22px}
+    h1{font-size:clamp(3.3rem,9vw,7rem);line-height:.95;letter-spacing:-4px}
+    h1 span{color:var(--accent)}
+    .hero p{max-width:620px;margin:25px auto;color:var(--muted);font-size:1.08rem}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 21px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+    .btn.primary{background:var(--accent);color:#15110a;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:95px 0}
+    .section-title{font-size:2.2rem;margin-bottom:10px}
+    .section-sub{color:var(--muted);margin-bottom:35px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:18px;padding:24px}
+    .track{display:flex;align-items:center;gap:15px}
+    .play{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#1b1a20;color:var(--accent);font-size:1.05rem;cursor:pointer}
+    .track h3{font-size:1rem}.track small{color:var(--muted)}
+    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+    .quote{font-size:1.8rem;line-height:1.25;border-left:3px solid var(--accent);padding-left:22px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    form{display:grid;gap:13px}
+    input,textarea{width:100%;background:#0f0f15;border:1px solid var(--line);color:white;border-radius:10px;padding:14px;font:inherit}
+    textarea{min-height:140px;resize:vertical}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
+    .socials{display:flex;gap:14px;margin-top:15px;color:#ddd}
+    @media(max-width:760px){
+      .links{display:none}.menu{display:block}
+      .grid,.about,.contact{grid-template-columns:1fr}
+      h1{letter-spacing:-2px}
+      section{padding:75px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#accueil">JR<span>_PROD</span></a>
+      <div class="links">
+        <a href="#accueil">Accueil</a><a href="#prods">Prods</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+      </div>
+      <button class="menu" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="container hero-content">
+      <div class="tag">Music • Production • Vibes</div>
+      <h1>JR<span>_PROD</span></h1>
+      <p>Des instrumentales qui racontent une histoire. Un univers entre R&B, profondeur, émotion et sonorités gospel.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#prods">Écouter les prods</a>
+        <a class="btn" href="#contact">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="prods">
+    <div class="container">
+      <h2 class="section-title">Mes productions</h2>
+      <p class="section-sub">Une première sélection — remplace les titres par tes vrais morceaux.</p>
+      <div class="grid">
+        <div class="card"><div class="track"><button class="play" data-track="1">▶</button><div><h3>Deep Love</h3><small>R&B • Calm • 2026</small></div></div></div>
+        <div class="card"><div class="track"><button class="play" data-track="2">▶</button><div><h3>Grace</h3><small>Gospel • Soul • 2026</small></div></div></div>
+        <div class="card"><div class="track"><button class="play" data-track="3">▶</button><div><h3>Night Vibes</h3><small>R&B • Chill • 2026</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="container about">
+      <div>
+        <h2 class="section-title">L'univers JR_PROD</h2>
+        <p class="section-sub">Production musicale avec une identité simple : émotion, musicalité et authenticité.</p>
+        <p>Ce site est une base que tu peux faire évoluer avec tes photos, tes morceaux, tes réseaux sociaux, tes prestations et tes actualités.</p>
+      </div>
+      <div class="quote">« La musique parle là où les mots s'arrêtent. »</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Une collaboration, une prod ou simplement envie d'échanger ?</p>
+      <div class="contact">
+        <div class="card">
+          <h3>JR_PROD</h3>
+          <p style="color:var(--muted);margin-top:10px">Music producer • R&B • Gospel • Soul</p>
+          <div class="socials">
+            <span>Instagram</span><span>YouTube</span><span>TikTok</span>
+          </div>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Merci ! Le formulaire est une démo pour cette première version.');">
+          <input type="text" placeholder="Ton nom" required>
+          <input type="email" placeholder="Ton e-mail" required>
+          <textarea placeholder="Ton message" required></textarea>
+          <button class="btn primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© 2026 JR_PROD — Tous droits réservés.</div>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.play');
+  let current = null;
+  buttons.forEach(btn => btn.addEventListener('click', () => {
+    buttons.forEach(b => b.textContent = '▶');
+    if (current === btn) { current = null; return; }
+    btn.textContent = 'Ⅱ';
+    current = btn;
+    alert('Démo : ajoute ici le fichier audio de ta production.');
+  }));
+</script>
+</body>
+</html>
